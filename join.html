@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join</title>
+    <script src="https://kit.fontawesome.com/1a29b5fd6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="inner">
+            <h1><a href="index.html">LOREM</a></h1>
+            <nav class="menuWeb">
+                <ul id="gnb">
+                    <li><a href="about us.html">ABOUT US</a></li>
+                        <li><a href="community.html">COMMUNITY</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="youtube.html">YOUTUBE</a></li>
+                        <li><a href="location.html">LOCATION</a></li>
+                </ul>
+                <ul class="util">
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="join.html">JOIN</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <!-- 햄버거 버튼 -->
+            <a href="#" class="btnCall">
+                <span>메뉴호출</span>
+            </a>
+
+            <nav class="menuMo">
+                <h1>
+                    <a href="index.html">LOREM</a>
+                    <span>Premium Sofa Brand</span>
+                </h1>
+
+                <ul id="gnbMo">
+                    <li><a href="about us.html">ABOUT US</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content join">
+        <div class="sub_visual"></div>
+        <div class="inner">
+            <h1>Join <span>회원가입</span> </h1>
+            
+            <form action="result.html">
+                <fieldset>
+                    <legend class="h">회원가입양식폼</legend>
+
+                    <h2><label for="terms">Terms & Policy</label></h2>
+                    <textarea name="terms" id="terms" cols="30" rows="10" spellcheck="false"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod numquam magnam unde eius impedit quisquam repellendus possimus magni suscipit voluptas soluta ex voluptate iste, aperiam quae in vitae, sapiente deserunt officia at vel. Maxime magnam non, nisi labore atque ipsum esse facilis consequuntur doloribus consectetur quod error natus, consequatur deserunt tenetur dolorem quidem eos, ipsam voluptatum earum incidunt illum. Similique rem a quod, suscipit beatae expedita sapiente nihil velit laboriosam voluptates modi ex hic minus id! Labore, tenetur? Maxime sint dolorum quasi architecto beatae, tenetur corrupti magnam nulla atque perferendis ea non, perspiciatis provident labore. Sequi aperiam enim tenetur fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et molestias veritatis, ipsam magni ullam, qui provident aliquid fuga voluptas reprehenderit sunt beatae at. Deleniti id iste repudiandae, dolores, quaerat aperiam facere sapiente officia voluptatum ipsam modi debitis vitae sit, hic dicta amet. Quo, dignissimos tempore alias qui, provident esse eius nobis cumque animi omnis modi nemo laboriosam minima ipsa, adipisci temporibus nesciunt error vero dolore asperiores nostrum. Accusamus praesentium nam quos dicta sunt, voluptatum eius, excepturi placeat rem recusandae reiciendis fuga aliquid aut explicabo assumenda nostrum veniam architecto eum, quidem voluptates non eveniet totam. Excepturi quas alias corporis necessitatibus impedit.
+                    </textarea>
+                    <div class="agreement">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="agree">약관에 동의합니다</label>
+                    </div>
+
+                    <h2>MEMBER INFORMATION</h2>
+                    <table>
+                        <caption class="h">회원정보 입력 양식 테이블</caption>
+                        <!-- 아이디 입력 -->
+                        <tr>
+                            <th scope="row"><label for="id">USER ID</label></th>
+                            <td>
+                                <input type="text" name="id" id="id" placeholder="아이디를 입력해 주세요" required>
+                            </td>
+                        </tr>
+                        <!-- password1 -->
+                        <tr>
+                            <th scope="row"><label for="pwd1">PASSWORD</label></th>
+                            <td>
+                                <input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력해 주세요" required>
+                            </td>
+                        </tr>
+                        <!-- password2  -->
+                        <tr>
+                            <th scope="row"><label for="pwd2">RE PASSWORD</label></th>
+                            <td>
+                                <input type="password" name="pwd2" id="pwd2" placehodler="비밀번호를 재입력해 주세요" required>
+                            </td>
+                        </tr>
+                        <!-- hobby checkbox -->
+                        <tr>
+                            <th scope="row">HOBBY</th>
+                            <td>
+                                <label for="game">
+                                    <input type="checkbox" name="hobby" id="game" value="game">GAME
+                                </label>
+                                <label for="music">
+                                    <input type="checkbox" name="hobby" id="music" value="music">MUSIC
+                                </label>
+                                <label for="reading">
+                                    <input type="checkbox" name="hobby" id="reading" value="reading">READING
+                                </label>
+                                <p class="hobbyTxt">취미를 하나 이상 선택해 주세요.</p>
+                            </td>
+                        </tr>
+                        <!-- gender radio -->
+                        <tr>
+                            <th scope="row">GENDER</th>
+                            <td>
+                                <label for="male">
+                                    <input type="radio" name="gender" id="male" value="male">MALE
+                                </label>
+                                <label for="female">
+                                    <input type="radio" name="gender" id="female" value="female">FEMALE
+                                </label>
+                                <p class="genderTxt">성별을 선택해 주세요.</p>
+                            </td>
+                        </tr>
+                        <!-- email -->
+                        <tr>
+                            <th scope="row"><label for="email">E-MAIL</label></th>
+                            <td>
+                                <input type="text" name="email" id="email" placeholder="이메일주소를 입력해 주세요">
+                            </td>
+                        </tr>
+                        <!-- education selecbox -->
+                        <tr>
+                            <th scope="row"><label for="edu">EDUCATION</label></th>
+                            <td>
+                                <select name="edu" id="edu">
+                                    <option value="">최종학력을 선택해 주세요</option>
+                                    <option value="elementary school">초등학교 졸업</option>
+                                    <option value="middle school">중학교 졸업</option>
+                                    <option value="high school">고등학교 졸업</option>
+                                    <option value="college">대학교 졸업</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <!-- comments textarea -->
+                        <tr>
+                            <th scope="row"><label for="comments">COMMENTS</label></th>
+                            <td>
+                                <textarea name="comments" id="comments" placeholder="코멘트를 입력해 주세요" cols="30" rows="10"></textarea>
+                            </td>
+                        </tr>
+                        <!-- submit  -->
+                        <tr>
+                            <th colspan="2">
+                                <input type="reset" value="CANCEL">
+                                <input type="submit" value="SUBMIT">
+                            </th>                            
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="inner">
+            <h1>LOREM</h1>
+            <div class="icon">
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fa-brands fa-instagram-square"></i>
+                <i class="fa-brands fa-twitter-square"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <address>
+                address : Lorem ipsum dolor sit amet consectetur adipisicin 05645<br>
+                TEL : +82-2-22-2220-2114<br>
+                FAX : +82-2-22-2220-2115
+            </address>
+                 
+        </div>
+        <p>
+            Copyright &copy; 2022 LOREM ALL Right Reserved. 
+        </p>
+    </footer>
+
+</body>
+</html>
