@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Charm&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -481,105 +482,36 @@ a {
 .department .sub_visual {
   background: url(../img/007.jpg) no-repeat center/cover;
 }
-.department .division {
+.department .inner {
   width: 100%;
-  height: 600px;
-  background: url(../img/조직도_2.jpg) no-repeat center/contain;
+  padding-top: 30px;
 }
-.department .division .div_tree {
-  position: absolute;
-  top: -9999px;
-  opacity: 0;
+.department .inner .wrap {
+  width: 1180px;
+  margin: 0 auto;
 }
-.department .division .div_tree li span {
-  display: block;
-  width: 25%;
-  height: 50px;
-  background: #29498f;
-  font: bold 13px/50px "arial";
-  color: #fff;
-  text-align: center;
-  margin-bottom: 20px;
-  position: relative;
+.department .inner .wrap .text {
+  width: 400px;
+  height: 400px;
+  float: left;
 }
-.department .division .div_tree li span::after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 1025px;
-  background: #aaa;
-  position: absolute;
-  top: 50px;
-  left: 50px;
+.department .inner .wrap .pic {
+  width: 400px;
+  height: 400px;
+  float: left;
 }
-.department .division .div_tree li ul li span {
-  background: #999;
-  transform: translateX(70px);
-}
-.department .division .div_tree li ul li span::before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 1px;
-  background: #aaa;
-  position: absolute;
-  top: 50%;
-  left: -20px;
-}
-.department .division .div_tree li ul li:nth-of-type(1) span::after {
-  display: none;
-}
-.department .division .div_tree li ul li:nth-of-type(2) span::after {
-  display: none;
-}
-.department .division .div_tree li ul li:nth-of-type(3) span::after {
-  height: 185px;
-}
-.department .division .div_tree li ul li:nth-of-type(4) span::after {
-  height: 185px;
-}
-.department .division .div_tree li ul li:nth-of-type(5) span::after {
-  height: 185px;
-}
-.department .division .div_tree li ul li:nth-of-type(6) span::after {
-  height: 115px;
-}
-.department .division .div_tree li ul li:nth-of-type(7) span::after {
-  height: 115px;
-}
-.department .division .div_tree li ul li ul li span {
-  background: #becbec;
-  transform: translateX(140px);
-}
-.department .division .div_tree li ul li ul li span::after {
-  display: none;
+.department .inner .wrap .pic img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
 
 /* tablet ----------------------------------------------------------*/
-@media screen and (max-width: 1179px) {
-  .department .division {
-    height: 60vw;
-  }
-}
 /*mobile ----------------------------------------------------------*/
-@media screen and (max-width: 539px) {
-  .department .inner h1 {
-    font-size: 40px;
-  }
-  .department .division {
-    height: auto;
-    background: none;
-  }
-  .department .division .div_tree {
-    position: relative;
-    top: 0px;
-    opacity: 1;
-  }
-}
 #header {
   width: 100%;
   border-bottom: 1px solid #fff;
-  background: #000;
+  background: #fff;
   position: sticky;
 }
 #header .inner {
@@ -596,7 +528,7 @@ a {
 }
 #header .inner h1 a {
   font: bold 40px/1 "Noto Sans";
-  color: #fff;
+  color: #000;
   padding-left: 15px;
   padding-bottom: 0;
 }
@@ -610,9 +542,8 @@ a {
 }
 #header .inner .menuWeb #gnb li a {
   font: bold 18px/1 "Noto Sans";
-  color: #fff;
+  color: #000;
   display: block;
-  color: #fff;
   padding: 5px 10px;
   transition: all 0.2s;
 }
@@ -630,7 +561,7 @@ a {
 }
 #header .inner .menuWeb .util li a {
   font: bold 12px/1 "Noto Sans";
-  color: #fff;
+  color: #000;
   display: block;
 }
 #header .inner .btnCall {
@@ -739,12 +670,13 @@ a {
   height: calc(100vh - 101px);
   margin: 0 auto;
   position: relative;
+  background: #fff;
 }
 #visual .wrap img {
   width: 100%;
   height: 100%;
   position: absolute;
-  filter: brightness(90%);
+  filter: brightness(80%);
   object-fit: cover;
 }
 #visual .wrap .inner {
@@ -756,29 +688,27 @@ a {
   transform: translate(-50%, -50%);
 }
 #visual .wrap .inner h1 {
-  font: bold 55px/1 "Noto Sans";
+  font: bold 55px/1.3 "Noto Sans";
   color: #fff;
-  text-align: center;
-  margin-bottom: 15px;
-  letter-spacing: 1px;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
 }
 #visual .wrap .inner p {
-  font: 15px/1.4 "Noto Sans";
+  font: 20px/1.4 "Noto Sans";
   color: #fff;
   margin-bottom: 30px;
-  text-align: center;
 }
 #visual .wrap .inner a {
   width: 160px;
   height: 40px;
   display: block;
-  border: 1px solid #fff;
-  font: bold 15px/40px "Noto Sans";
+  border: 1px solid #000;
+  font: 15px/40px "Noto Sans";
   color: #fff;
-  background: rgba(0, 0, 0, 0.555);
   transition: all 0.2s;
-  margin: 0 auto;
+  margin: 0 0;
   text-align: center;
+  background: black;
 }
 #visual .wrap .inner a:hover {
   border: 1px solid transparent white;
@@ -790,7 +720,7 @@ a {
 /* content --------------------------------------------*/
 #content {
   width: 100%;
-  background: url(../img/image_3.jpg) no-repeat center/cover fixed;
+  background: #000;
   background-size: 100%;
   padding: 15px;
   margin-bottom: 30px;
@@ -801,7 +731,7 @@ a {
   position: relative;
 }
 #content .inner h1 {
-  font: bold 40px/1 "Charm";
+  font: bold 40px/1 "Noto Sans";
   color: #fff;
   text-align: center;
   padding-top: 30px;
@@ -810,7 +740,7 @@ a {
   font: bold 15px/1.5 "Noto Sans";
   color: #fff;
   text-align: center;
-  padding: 30px 0;
+  padding: 30px 0 30px 0;
 }
 
 /* photoBox -------------------------------------------*/
@@ -821,12 +751,6 @@ a {
 #photoBox .inner {
   width: 1180px;
   margin: 0 auto;
-}
-#photoBox .inner h1 {
-  font: bold 30px/1 "Noto Sans";
-  color: #000;
-  text-align: center;
-  margin-bottom: 30px;
 }
 #photoBox .inner .wrap {
   width: 100%;
@@ -841,22 +765,12 @@ a {
 }
 #photoBox .inner .wrap article .pic {
   width: 100%;
-  height: 260px;
+  height: 600px;
   overflow: hidden;
   position: relative;
 }
-#photoBox .inner .wrap article .pic p {
-  font: 40px/1 "Noto Sans";
-  color: #fff;
-  letter-spacing: 5px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#photoBox .inner .wrap article .pic a {
   visibility: hidden;
-}
-#photoBox .inner .wrap article .pic:hover p {
-  visibility: visible;
 }
 #photoBox .inner .wrap article .pic img {
   width: 100%;
@@ -866,8 +780,23 @@ a {
   transform: scale(1);
 }
 #photoBox .inner .wrap article .pic:hover img {
-  transform: scale(0.9);
-  filter: brightness(40%);
+  transform: scale(1.1);
+  filter: brightness(70%);
+}
+#photoBox .inner .wrap article .pic:hover a {
+  width: 380px;
+  height: 170px;
+  display: block;
+  font: bold 15px/170px "Noto Sans";
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.637);
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: visible;
 }
 
 /* board--------------------------------------------- */
@@ -935,8 +864,7 @@ a {
 }
 #board .inner .wrap article:nth-of-type(2) h1 {
   font: bold 20px "Noto Sans";
-  border-bottom: 1px solid #222;
-  color: #000;
+  color: #252422;
   margin: 20px;
 }
 #board .inner .wrap article:nth-of-type(2) p {
@@ -995,7 +923,6 @@ a {
 #board .inner .wrap article:nth-of-type(5) h1 {
   font: bold 20px "Noto Sans";
   color: #000;
-  border-bottom: 1px solid #222;
   margin: 20px;
 }
 #board .inner .wrap article:nth-of-type(5) p {
@@ -1038,7 +965,6 @@ a {
 #board .inner .wrap article:nth-of-type(7) h1 {
   font: bold 20px "Noto Sans";
   color: #000;
-  border-bottom: 1px solid #222;
   margin: 20px;
 }
 #board .inner .wrap article:nth-of-type(7) p {
@@ -1073,52 +999,123 @@ a {
   filter: brightness(80%);
 }
 
-/* middle --------------------------------------------*/
-#middle {
+/* content2 -------------------------------------------*/
+#content2 {
   width: 100%;
   padding: 15px;
 }
-#middle .inner {
+#content2 .inner {
   width: 1180px;
   margin: 0 auto;
+}
+#content2 .inner .wrap {
+  width: 100%;
+  margin-bottom: 50px;
+}
+#content2 .inner .wrap article:nth-of-type(1) {
+  display: flex;
+  flex-direction: row;
   margin-bottom: 30px;
 }
-#middle .inner .wrap {
-  width: 100%;
-  margin-bottom: 0 30px;
-  background: url(../img/image_4.jpg) no-repeat center/cover;
-  padding-bottom: 150px;
+#content2 .inner .wrap article:nth-of-type(1) .pic {
+  width: 1000px;
+  height: 600px;
+  overflow: hidden;
+  flex-grow: 70%;
 }
-#middle .inner .wrap h1 {
-  font: bold 40px/1 "Noto Sans";
+#content2 .inner .wrap article:nth-of-type(1) .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+  transform: scale(1);
+}
+#content2 .inner .wrap article:nth-of-type(1) .pic:hover img {
+  transform: scale(1.1);
+  filter: brightness(70%);
+}
+#content2 .inner .wrap article:nth-of-type(1) .text {
+  width: 22vw;
+  height: 400px;
+  background: rgba(136, 136, 136, 0.164);
+  margin-top: 200px;
+  flex-grow: 30%;
+}
+#content2 .inner .wrap article:nth-of-type(1) .text h1 {
+  font: 30px/1 "arial";
   color: #000;
   text-align: center;
-  margin-bottom: 15px;
-  padding-top: 100px;
+  margin: 10px;
 }
-#middle .inner .wrap p {
-  font: 15px/1.4 "Noto Sans";
-  color: #111;
-  margin-bottom: 30px;
+#content2 .inner .wrap article:nth-of-type(1) .text p {
+  font: 20px/1 "arial";
+  color: #333;
   text-align: center;
+  margin: 30px;
 }
-#middle .inner .wrap a {
-  width: 160px;
-  height: 40px;
+#content2 .inner .wrap article:nth-of-type(1) .text a {
+  width: 150px;
+  height: 50px;
   display: block;
-  border: 1px solid #fff;
-  font: bold 15px/40px "Noto Sans";
+  font: 13px/50px "Noto Sans";
   color: #fff;
-  background: rgba(0, 0, 0, 0.555);
-  transition: all 0.2s;
-  margin: 0 auto;
   text-align: center;
+  background: black;
+  position: relative;
+  top: 100px;
+  left: 100px;
 }
-#middle .inner .wrap a:hover {
-  border: 1px solid transparent white;
-  width: 160px;
-  height: 40px;
-  background: rgba(0, 0, 0, 0.897);
+#content2 .inner .wrap article:nth-of-type(2) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#content2 .inner .wrap article:nth-of-type(2) .pic {
+  width: 1000px;
+  height: 600px;
+  overflow: hidden;
+  flex-grow: 70%;
+}
+#content2 .inner .wrap article:nth-of-type(2) .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+  transform: scale(1);
+}
+#content2 .inner .wrap article:nth-of-type(2) .pic:hover img {
+  transform: scale(1.1);
+  filter: brightness(70%);
+}
+#content2 .inner .wrap article:nth-of-type(2) .text {
+  width: 22vw;
+  height: 400px;
+  background: rgba(136, 136, 136, 0.164);
+  margin-top: 200px;
+  flex-grow: 30%;
+}
+#content2 .inner .wrap article:nth-of-type(2) .text h1 {
+  font: 30px/1 "arial";
+  color: #000;
+  text-align: center;
+  margin: 10px;
+}
+#content2 .inner .wrap article:nth-of-type(2) .text p {
+  font: 20px/1 "arial";
+  color: #333;
+  text-align: center;
+  margin: 30px;
+}
+#content2 .inner .wrap article:nth-of-type(2) .text a {
+  width: 150px;
+  height: 50px;
+  display: block;
+  font: 13px/50px "Noto Sans";
+  color: #fff;
+  text-align: center;
+  background: black;
+  position: relative;
+  top: 100px;
+  left: 100px;
 }
 
 /* footer ---------------------------------------------*/
@@ -1132,7 +1129,7 @@ a {
   padding: 15px;
 }
 #footer .inner h1 {
-  font: bold 40px/1 "Noto Sans";
+  font: bold 30px/1 "Noto Sans";
   color: #fff;
   margin: 0 auto;
   padding-bottom: 15px;
@@ -1161,6 +1158,48 @@ a {
   height: 30px;
   text-align: center;
   opacity: 0.8;
+}
+
+aside {
+  width: 1300px;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  transform: translate(-50%, -38%);
+  display: none;
+}
+aside .top {
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+aside .right {
+  width: 2px;
+  height: 0%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+aside .bottom {
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+aside .left {
+  width: 2px;
+  height: 0%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 /* tablet -------------------------------------------- */
