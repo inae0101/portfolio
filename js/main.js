@@ -16,7 +16,7 @@ const _right = aside.querySelector(".right");
 const _bottom = aside.querySelector(".bottom"); 
 const _left = aside.querySelector(".left");
 
-btnOpen.addEventListener("click",e=>{
+btnOpen.addEventListener("load",e=>{
     e.preventDefault(); 
 
     aside.style.display = "block";
