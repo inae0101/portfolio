@@ -1,67 +1,125 @@
-main{
-    width:100%; padding:0px; overflow:hidden;
-    position:relative; opacity:0; 
-    transform:translateY(100px); transition:1s; 
 
-        &.on{
-            opacity:1; transform:translateY(0px); 
-        }
-
-    &::after{ content:''; display:block; clear:both; }
-
-    .item{
-        width:calc(100% / 4); float:left; padding:10px; 
-
-        >div{
-            width:100%; 
-            background:#fff; padding:15px; box-shadow:5px 5px 20px rgba(0,0,0,0.1); 
-
-            .pic{
-                display:block; width:100%; 
-
-                img{
-                    width:100%; object-fit: cover; 
-                }
-            }
-            p{
-                font:18px/1.2 'arial'; color:#444; margin-top:10px; margin-bottom:15px; 
-            }
-            .profile{
-                display:flex; align-items:center; 
-                img{
-                    width:25px; 
-                    height:25px;
-                    border-radius:50%;  margin-right:10px; 
-                }
-                span{
-                    font:14px/1 'arial'; color:#666; 
-                }
-            }
-        }
+.contentGallery{
+    width:100%; 
+    padding:0 0 50px; 
+  
+      .sub_visual{
+          width:100%; 
+          height:20vw; 
+          background: url(../img/milad-fakurian-GJKx5lhwU3M-unsplash.jpg) no-repeat center/cover fixed;
+          margin-bottom:80px;
+          position: relative;
+         
+          /*#gnb{    
+          }*/
+      }
+      .inner{
+          width:1180px; 
+          margin:0 auto; 
+          height:200px; 
+  
+          h1{
+          font: normal 80px/1 'Secular One'; 
+          color:#000; 
+          text-align: center;
+          margin-bottom: 30px;
+          }
+          p{
+          font:normal 20px/1 $mainFont; 
+          color:#000; 
+          text-align: center;
+          }
+      }
     }
 
-
-aside{
-    width:100%; height:100vh; 
-    background:rgba(0,0,0,0.8); 
-    position:fixed; top:0; left:0; 
-    padding:5vw; 
-    display:flex; 
-    justify-content:center; 
-    align-items:center; 
-
-    .con{
-        width:100%; height:100%; 
-
-        >img{
+    main{
+        width:100%; padding:50px; 
+    
+        #searchBox{
+            width:100%; padding:50px 10px; 
+            font-size:0; 
+            #search{
+                width:300px; height:30px; 
+                border:1px solid #333; 
+                padding-left:10px; 
+            }
+            .btnSearch{
+                width:80px; height:30px; 
+                background:#333; 
+                font:bold 12px/30px 'arial'; 
+                color:#fff; 
+                text-align:center; 
+                border:none; 
+                cursor:pointer; 
+                vertical-align:top;
+            }
+        }
+        .you{
+            width:100%; overflow:hidden; 
+            position:relative; opacity:0; 
+            transform:translateY(100px); transition:1s; 
+    
+            &.on{
+                opacity:1; transform:translateY(0px); 
+            }
+    
+            
+        
+            &::after{ content:''; display:block; clear:both; }
+        
+            .item{
+                width:calc(100% / 6); float:left; padding:10px; 
+        
+                >div{
+                    width:100%; 
+                    background:#fff; padding:10px; box-shadow:5px 5px 20px rgba(0,0,0,0.1); 
+        
+                    .pic{
+                        display:block; width:100%; 
+        
+                        img{
+                            width:100%; 
+                        }
+                    }
+                    p{
+                        font:12px/1.2 'arial'; color:#777; margin-top:10px; margin-bottom:15px; 
+                    }
+                    .profile{
+                        display:flex; align-items:center; 
+                        img{
+                            width:25px; height:25px; border-radius:0%;  margin-right:10px; 
+                        }
+                        span{
+                            font:11px/1 'arial'; color:#999; 
+                        }
+                    }
+                }
+            }
+        }
+   
+    
+    
+    .side1{
+        width:100%; height:100vh; 
+        background:rgba(0,0,0,0.8); 
+        position:fixed; top:0; left:0; 
+        padding:5vw; 
+        display:flex; 
+        justify-content:center; 
+        align-items:center; 
+    
+        .con{
             width:100%; height:100%; 
-            object-fit:contain; 
+    
+            >img{
+                width:100%; height:100%; 
+                object-fit:contain; 
+            }
+        }
+        .close{
+            position:absolute; 
+            top:40px; right:40px; 
+            color:orange; 
         }
     }
-    .close{
-        position:absolute; 
-        top:40px; right:40px; 
-        color:#fff; 
-    }
-}
 }

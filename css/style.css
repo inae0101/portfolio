@@ -181,108 +181,150 @@ a {
   text-align: center;
 }
 
-.content {
+.content1 {
   width: 100%;
   padding: 0 0 30px;
 }
-.content .sub_visual {
+.content1 .sub_visual {
   width: 100%;
   height: 250px;
   background: #bbb;
   margin-bottom: 30px;
 }
-.content .inner {
+.content1 .inner {
   width: 1180px;
   margin: 0 auto;
   min-height: 500px;
 }
-.content .inner h1 {
+.content1 .inner h1 {
   font: normal 50px/1 "Noto Sans";
   color: #000;
   margin-bottom: 60px;
 }
-.content .inner h1 span {
+.content1 .inner h1 span {
   font: normal 20px/1 "Noto Sans";
   color: #aaa;
 }
-.content .inner h1 span::before {
+.content1 .inner h1 span::before {
   content: "/";
   margin-right: 20px;
   margin-left: 10px;
 }
 
-/* footer ---------------------------------------------*/
+/* footer ----------------------------------------*/
 #footer_sub {
   width: 100%;
+  padding-top: 20px;
   background: #000;
-  height: 320px;
-  padding: 50px 0;
 }
 #footer_sub .inner {
   width: 1180px;
   margin: 0 auto;
-  text-align: center;
 }
 #footer_sub .inner h1 {
-  font: 28px/1 "Noto Sans";
-  color: #fff;
-  text-align: center;
+  font: bold 23px/1 "Noto Sans";
+  border-bottom: 1px solid rgba(255, 255, 255, 0.322);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #eee;
   letter-spacing: 2px;
-  padding-bottom: 30px;
 }
-#footer_sub .inner .icon {
+#footer_sub .inner .wrap {
+  display: flex;
+  justify-content: space-between;
+}
+#footer_sub .inner .wrap article {
+  flex: 1;
+}
+#footer_sub .inner .wrap article:nth-of-type(1) h2 {
+  font: bold 18px/1 "Noto Sans";
+  color: #eee;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+}
+#footer_sub .inner .wrap article:nth-of-type(1) p {
+  font: 14px/1.5 "Noto Sans";
+  color: #aaa;
+}
+#footer_sub .inner .wrap article:nth-of-type(1) a {
   display: block;
-  padding-bottom: 50px;
+  font: bold 14px/1.5 "Noto Sans";
+  color: #eee;
+  padding: 10px 0 5px 0;
 }
-#footer_sub .inner .icon i {
-  font-size: 20px;
-  text-align: center;
-  padding: 10px;
-  color: #fff;
+#footer_sub .inner .wrap article:nth-of-type(1):hover a {
+  display: inline-block;
+  border-bottom: 1px solid #eee;
 }
-#footer_sub .inner address {
+#footer_sub .inner .wrap article:nth-of-type(2) h2 {
+  font: bold 18px/1 "Noto Sans";
+  color: #eee;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+}
+#footer_sub .inner .wrap article:nth-of-type(2) ul {
+  margin-bottom: 20px;
+}
+#footer_sub .inner .wrap article:nth-of-type(2) ul li {
+  font: 16px/1.5 "Noto Sans";
+  color: #aaa;
+}
+#footer_sub .inner .wrap article:nth-of-type(3) h2 {
+  font: bold 18px/1 "Noto Sans";
+  color: #eee;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+}
+#footer_sub .inner .wrap article:nth-of-type(3) ul {
+  margin-bottom: 20px;
+}
+#footer_sub .inner .wrap article:nth-of-type(3) ul li {
+  font: 16px/1.5 "Noto Sans";
+  color: #aaa;
+}
+#footer_sub .inner .wrap article:nth-of-type(4) h2 {
+  font: 18px/1 "Noto Sans";
+  color: #eee;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+}
+#footer_sub .inner .wrap article:nth-of-type(4) address {
+  font: 14px/1.5 "Noto Sans";
+  color: #aaa;
+  padding-top: 10px;
+}
+#footer_sub .inner .wrap article:nth-of-type(4) ul {
+  width: 100%;
+  display: flex;
+}
+#footer_sub .inner .wrap article:nth-of-type(4) ul li {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  background: #eee;
+}
+#footer_sub .inner .wrap article:nth-of-type(4) ul li a {
   display: block;
-  font: 14px/1.7 "Noto Sans";
-  color: #fff;
+  font: 20px/30px "Noto Sans";
+  color: #000;
   text-align: center;
-  margin-top: 10px;
 }
-#footer_sub .inner p {
-  font: 14px/1 "Noto Sans";
-  color: rgba(255, 255, 255, 0.411);
+#footer_sub .inner .wrap article:nth-of-type(4) ul li:hover a {
+  color: #eee;
+  background: #000;
+}
+#footer_sub > p {
+  font: 13px/1 "arial";
+  color: #aaa;
+  background: #666;
   text-align: center;
-  margin-top: 20px;
+  padding: 5px;
 }
 
 /* tablet -------------------------------------------- */
-@media screen and (max-width: 1179px) {
-  /* header ------------------------------------- */
-  #header_sub .inner {
-    width: 100%;
-    height: 100px;
-    /* 햄버거 버튼 & 모바일 메뉴 */
-  }
-  #header_sub .inner h1 {
-    left: 20px;
-  }
-  #header_sub .inner .menuWeb {
-    display: none;
-  }
-  #header_sub .inner .btnCall {
-    display: block;
-  }
-}
 /* mobile ------------------------------------------- */
-@media screen and (max-width: 539px) {
-  /* visual -------------------------------- */
-  #visual {
-    height: calc(100vh - 101px);
-    background: url(../img/visual1.jpg) no-repeat center/cover;
-  }
-  #visual .inner {
-    padding: 0 30px;
-  }
-}
 /*contentCommunity------------------------------------------*/
 .contentCommunity {
   width: 100%;
@@ -338,16 +380,137 @@ a {
 .contentCommunity .community .search p a {
   color: #fff;
 }
+.contentCommunity .community .inner1 {
+  width: 1180px;
+  margin: 0 auto;
+}
+.contentCommunity .community .inner1 .wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contentCommunity .community .inner1 .wrap article {
+  width: 25%;
+  padding-bottom: 200px;
+  position: relative;
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(1) {
+  margin-right: 10px;
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(1) .pic {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(1) .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+  transform: scale(1);
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(1) p {
+  font: bold 40px/1.5 "Noto Sans";
+  letter-spacing: 5px;
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(1) p a {
+  color: #000;
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(1) p:hover {
+  font: italic bold 40px/1.5 "Noto Sans";
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(2) {
+  margin-right: 10px;
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(2) .pic {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: absolute;
+  top: 100px;
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(2) .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+  transform: scale(1);
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(2) p {
+  font: bold 40px/1.5 "Noto Sans";
+  position: absolute;
+  top: 40px;
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(2) p a {
+  color: #000;
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(2) p:hover {
+  font: italic bold 40px/1.5 "Noto Sans";
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(3) {
+  margin-right: 10px;
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(3) .pic {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(3) .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+  transform: scale(1);
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(3) p {
+  font: bold 40px/1.5 "Noto Sans";
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(3) p a {
+  color: #000;
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(3) p:hover {
+  font: italic bold 40px/1.5 "Noto Sans";
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(4) {
+  margin-right: 0px;
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(4) .pic {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: absolute;
+  top: 100px;
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(4) .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+  transform: scale(1);
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(4) p {
+  font: bold 40px/1.5 "Noto Sans";
+  position: absolute;
+  top: 40px;
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(4) p a {
+  color: #000;
+}
+.contentCommunity .community .inner1 .wrap article:nth-of-type(4) p:hover {
+  font: italic bold 40px/1.5 "Noto Sans";
+}
 .contentCommunity .community .inner_2 table {
   width: 1180px;
   border-bottom: 2px solid #111;
   margin: 30px auto;
+  border-collapse: collapse;
 }
 .contentCommunity .community .inner_2 table tr:nth-last-of-type(even) {
   background: #fff;
 }
 .contentCommunity .community .inner_2 table tr:hover {
-  background: #999;
+  background: #eee;
 }
 .contentCommunity .community .inner_2 table tr th {
   padding: 15px;
@@ -421,11 +584,12 @@ a {
   text-align: center;
   width: 30px;
   height: 30px;
-  font: 11px/30px "arial" #222;
+  font: 13px/30px "arial";
+  color: #222;
   border: 1px solid #888;
 }
 .contentCommunity .pagination a:hover {
-  background: #666;
+  background: #000;
   color: #fff;
 }
 
@@ -790,64 +954,118 @@ a {
 
 /* tablet ----------------------------------------------------------*/
 /*mobile ----------------------------------------------------------*/
+.contentGallery {
+  width: 100%;
+  padding: 0 0 50px;
+}
+.contentGallery .sub_visual {
+  width: 100%;
+  height: 20vw;
+  background: url(../img/milad-fakurian-GJKx5lhwU3M-unsplash.jpg) no-repeat center/cover fixed;
+  margin-bottom: 80px;
+  position: relative;
+  /*#gnb{    
+  }*/
+}
+.contentGallery .inner {
+  width: 1180px;
+  margin: 0 auto;
+  height: 200px;
+}
+.contentGallery .inner h1 {
+  font: normal 80px/1 "Secular One";
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contentGallery .inner p {
+  font: normal 20px/1 "Noto Sans";
+  color: #000;
+  text-align: center;
+}
+
 main {
   width: 100%;
-  padding: 0px;
+  padding: 50px;
+}
+main #searchBox {
+  width: 100%;
+  padding: 50px 10px;
+  font-size: 0;
+}
+main #searchBox #search {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #333;
+  padding-left: 10px;
+}
+main #searchBox .btnSearch {
+  width: 80px;
+  height: 30px;
+  background: #333;
+  font: bold 12px/30px "arial";
+  color: #fff;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  vertical-align: top;
+}
+main .you {
+  width: 100%;
   overflow: hidden;
   position: relative;
   opacity: 0;
   transform: translateY(100px);
   transition: 1s;
 }
-main.on {
+main .you.on {
   opacity: 1;
   transform: translateY(0px);
 }
-main::after {
+main .you::after {
   content: "";
   display: block;
   clear: both;
 }
-main .item {
-  width: 25%;
+main .you .item {
+  width: 16.6666666667%;
   float: left;
   padding: 10px;
 }
-main .item > div {
+main .you .item > div {
   width: 100%;
   background: #fff;
-  padding: 15px;
+  padding: 10px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
-main .item > div .pic {
+main .you .item > div .pic {
   display: block;
   width: 100%;
 }
-main .item > div .pic img {
+main .you .item > div .pic img {
   width: 100%;
-  object-fit: cover;
 }
-main .item > div p {
-  font: 18px/1.2 "arial";
-  color: #444;
+main .you .item > div p {
+  font: 12px/1.2 "arial";
+  color: #777;
   margin-top: 10px;
   margin-bottom: 15px;
 }
-main .item > div .profile {
+main .you .item > div .profile {
   display: flex;
   align-items: center;
 }
-main .item > div .profile img {
+main .you .item > div .profile img {
   width: 25px;
   height: 25px;
-  border-radius: 50%;
+  border-radius: 0%;
   margin-right: 10px;
 }
-main .item > div .profile span {
-  font: 14px/1 "arial";
-  color: #666;
+main .you .item > div .profile span {
+  font: 11px/1 "arial";
+  color: #999;
 }
-main aside {
+main .side1 {
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.8);
@@ -859,38 +1077,67 @@ main aside {
   justify-content: center;
   align-items: center;
 }
-main aside .con {
+main .side1 .con {
   width: 100%;
   height: 100%;
 }
-main aside .con > img {
+main .side1 .con > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-main aside .close {
+main .side1 .close {
   position: absolute;
   top: 40px;
   right: 40px;
-  color: #fff;
+  color: orange;
+}
+
+.contentYoutube {
+  width: 100%;
+  padding: 0 0 50px;
+}
+.contentYoutube .sub_visual {
+  width: 100%;
+  height: 20vw;
+  background: url(../img/scott-webb-_JpQfgcCa2o-unsplash.jpg) no-repeat center/cover fixed;
+  margin-bottom: 80px;
+  position: relative;
+  /*#gnb{    
+  }*/
+}
+.contentYoutube .inner {
+  width: 1180px;
+  margin: 0 auto;
+  height: 200px;
+}
+.contentYoutube .inner h1 {
+  font: normal 80px/1 "Secular One";
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contentYoutube .inner p {
+  font: normal 20px/1 "Noto Sans";
+  color: #000;
+  text-align: center;
 }
 
 main {
-  width: 100%;
-  height: 100vh;
-  padding: 10vh 10vw;
+  width: 1180px;
+  padding: 100px 5vw;
+  margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
   align-content: center;
 }
 main article {
-  width: 48%;
+  width: 1180px;
   height: 30%;
-  border: 1px solid #999;
+  border-top: 2px solid #333;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 50px;
   position: relative;
 }
@@ -909,36 +1156,20 @@ main article .con {
   position: relative;
 }
 main article .con h2 {
-  font: bold 16px/1.2 "맑은 고딕", "arial";
+  font: bold 18px/1.2 "맑은 고딕", "arial";
   color: #555;
   margin-bottom: 15px;
 }
 main article .con p {
-  font: 12px/1.2 "맑은 고딕", "arial";
+  font: 16px/1.2 "맑은 고딕", "arial";
   color: #888;
 }
 main article .con span {
-  font: bold 12px/1 "arial";
+  font: bold 14px/1 "arial";
   color: orange;
   position: absolute;
-  bottom: 10px;
+  bottom: -80px;
   right: 10px;
-}
-main aside {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.9);
-  padding: 5vw;
-}
-main aside .btnClose {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  color: orange;
-  cursor: pointer;
 }
 
 #header {
@@ -1159,34 +1390,6 @@ main aside .btnClose {
   width: 100%;
   padding: 100px 30px 0;
   /* iconbox -------------------------------------------*/
-}
-#txtbox .iconbox {
-  width: 80px;
-  position: fixed;
-  top: 20vh;
-  right: 1vw;
-  z-index: 9;
-}
-#txtbox .iconbox .txt1 {
-  width: 100%;
-}
-#txtbox .iconbox .txt1 h1 {
-  width: 55px;
-  height: 55px;
-  letter-spacing: 3px;
-  margin: 20px 0px;
-  text-align: center;
-  background: #000;
-}
-#txtbox .iconbox .txt1 h1 a {
-  font: bold 8px/55px "Noto Sans";
-  color: #fff;
-}
-#txtbox .iconbox .txt1 h1:hover a {
-  color: #000;
-}
-#txtbox .iconbox .txt1 h1:hover {
-  background: #fff;
 }
 #txtbox .inner {
   width: 1180px;
@@ -1700,7 +1903,7 @@ main aside .btnClose {
   margin-right: 0;
 }
 
-/* footer ---------------------------------------------*/
+/* footer ----------------------------------------*/
 #footer {
   width: 100%;
   padding-top: 20px;
@@ -1710,951 +1913,200 @@ main aside .btnClose {
   width: 1180px;
   margin: 0 auto;
 }
-#footer .inner .wrap h1 {
+#footer .inner h1 {
   font: bold 23px/1 "Noto Sans";
   border-bottom: 1px solid rgba(255, 255, 255, 0.322);
   padding-bottom: 10px;
   margin-bottom: 20px;
-  color: #fff;
+  color: #eee;
   letter-spacing: 2px;
 }
-#footer .inner .wrap article {
-  float: left;
+#footer .inner .wrap {
+  display: flex;
+  justify-content: space-between;
 }
-#footer .inner .wrap article:nth-of-type(1) {
-  width: 33%;
+#footer .inner .wrap article {
+  flex: 1;
 }
 #footer .inner .wrap article:nth-of-type(1) h2 {
-  font: 18px/1 "Noto Sans";
-  color: #fff;
+  font: bold 18px/1 "Noto Sans";
+  color: #eee;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+}
+#footer .inner .wrap article:nth-of-type(1) p {
+  font: 14px/1.5 "Noto Sans";
+  color: #aaa;
+}
+#footer .inner .wrap article:nth-of-type(1) a {
+  display: block;
+  font: bold 14px/1.5 "Noto Sans";
+  color: #eee;
+  padding: 10px 0 5px 0;
+}
+#footer .inner .wrap article:nth-of-type(1):hover a {
+  display: inline-block;
+  border-bottom: 1px solid #eee;
+}
+#footer .inner .wrap article:nth-of-type(2) h2 {
+  font: bold 18px/1 "Noto Sans";
+  color: #eee;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+}
+#footer .inner .wrap article:nth-of-type(2) ul {
+  margin-bottom: 20px;
+}
+#footer .inner .wrap article:nth-of-type(2) ul li {
+  font: 16px/1.5 "Noto Sans";
+  color: #aaa;
+}
+#footer .inner .wrap article:nth-of-type(3) h2 {
+  font: bold 18px/1 "Noto Sans";
+  color: #eee;
   font-weight: bold;
   letter-spacing: 2px;
   padding-bottom: 20px;
 }
-#footer .inner .wrap article:nth-of-type(1) address {
-  font: 16px/1.5 "Noto Sans";
-  color: #fff;
-}
-#footer .inner .wrap article:nth-of-type(2) {
-  width: 33%;
-}
-#footer .inner .wrap article:nth-of-type(2) ul {
-  width: 100%;
-  padding-left: 200px;
+#footer .inner .wrap article:nth-of-type(3) ul {
   margin-bottom: 20px;
 }
-#footer .inner .wrap article:nth-of-type(2) ul li {
-  font: 18px/1.5 "Noto Sans";
-  color: #fff;
+#footer .inner .wrap article:nth-of-type(3) ul li {
+  font: 16px/1.5 "Noto Sans";
+  color: #aaa;
 }
-#footer .inner .wrap article:nth-of-type(3) {
-  width: 33%;
+#footer .inner .wrap article:nth-of-type(4) h2 {
+  font: 18px/1 "Noto Sans";
+  color: #eee;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
 }
-#footer .inner .wrap article:nth-of-type(3) ul {
+#footer .inner .wrap article:nth-of-type(4) address {
+  font: 14px/1.5 "Noto Sans";
+  color: #aaa;
+  padding-top: 10px;
+}
+#footer .inner .wrap article:nth-of-type(4) ul {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: right;
 }
-#footer .inner .wrap article:nth-of-type(3) ul li {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-  border-radius: 25px;
-  background: #fff;
+#footer .inner .wrap article:nth-of-type(4) ul li {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  background: #eee;
 }
-#footer .inner .wrap article:nth-of-type(3) ul li a {
+#footer .inner .wrap article:nth-of-type(4) ul li a {
   display: block;
-  font: 30px/50px "Noto Sans";
+  font: 20px/30px "Noto Sans";
   color: #000;
   text-align: center;
 }
-#footer p {
-  width: 100%;
+#footer .inner .wrap article:nth-of-type(4) ul li:hover a {
+  color: #eee;
+  background: #000;
+}
+#footer > p {
+  font: 13px/1 "arial";
+  color: #aaa;
+  background: #666;
   text-align: center;
-  background: rgba(255, 255, 255, 0.534);
-  font: 13px/1.6 "arial";
-  color: rgba(0, 0, 0, 0.479);
+  padding: 5px;
 }
 
-/* tablet -------------------------------------------- */
-@media screen and (max-width: 1179px) {
-  /* header ------------------------------------- */
-  #header .inner {
-    width: 100%;
-    height: 100px;
-    /* 햄버거 버튼 & 모바일 메뉴 */
-  }
-  #header .inner h1 {
-    left: 20px;
-  }
-  #header .inner .menuWeb {
-    display: none;
-  }
-  #header .inner .btnCall {
-    display: block;
-  }
-
-  /* ok visual ------------------------------------*/
-  #visual .wrap .inner {
-    width: 1000px;
-  }
-
-  /* txtbox -----------------------------------------*/
-  #txtbox .inner {
-    width: 90%;
-  }
-  #txtbox .inner .wrap .txt1 p {
-    width: 900px;
-    font: 24px/1.5 "Noto Sans";
-  }
-  #txtbox .inner .wrap .txt1 i {
-    font-size: 40px;
-  }
-
-  /* photoBox -----------------------------------------*/
-  #photoBox {
-    width: 100%;
-    padding: 50px 30px 100px;
-  }
-  #photoBox .inner {
-    width: 1180px;
-    margin: 0 auto;
-  }
-  #photoBox .inner .wrap {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  #photoBox .inner .wrap article {
-    width: 25%;
-    padding-right: 10px;
-    flex-basis: 20%;
-  }
-  #photoBox .inner .wrap article:nth-last-child(1) {
-    padding-right: 0;
-  }
-  #photoBox .inner .wrap article .pic {
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-    position: relative;
-  }
-  #photoBox .inner .wrap article .pic a {
-    width: 300px;
-    height: 300px;
-    display: block;
-    font: bold 15px/300px "Montserrat";
-    letter-spacing: 3px;
-    color: #fff;
-    margin: 0 auto;
-    text-align: center;
-    background: rgba(10, 1, 0, 0.32);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px solid #fff;
-    visibility: hidden;
-  }
-  #photoBox .inner .wrap article .pic img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.5s;
-    transform: scale(1);
-  }
-  #photoBox .inner .wrap article .pic:hover img {
-    transform: scale(1.1);
-  }
-  #photoBox .inner .wrap article .pic:hover a {
-    visibility: visible;
-  }
-
-  /* ok banner -----------------------------------------*/
-  #banner .inner p {
-    font: bold 20px/2 "Noto Sans";
-    padding: 30px;
-  }
-
-  /* content -------------------------------------------*/
-  #content {
-    /* prevBoard -------------------------------------------*/
-    /* board--------------------------------------------- */
-    /* nextBoard -------------------------------------------*/
-    /* footer ---------------------------------------------*/
-  }
-  #content .inner .wrap article:nth-of-type(1) .pic img {
-    width: 90%;
-    height: 90%;
-  }
-  #content .inner .wrap article:nth-of-type(1) .text {
-    margin-top: 140px;
-  }
-  #content .inner .wrap article:nth-of-type(2) {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  #content .inner .wrap article:nth-of-type(2) .pic img {
-    width: 90%;
-    height: 90%;
-  }
-  #content .inner .wrap article:nth-of-type(2) .pic .text {
-    width: 200px;
-    height: 300px;
-    background: #eee;
-    padding: 30px;
-    margin-top: 100px;
-  }
-  #content .inner .wrap article:nth-of-type(2) .pic .text h1 {
-    font: bold 25px/1 "Noto Sans";
-    color: #000;
-    text-align: start;
-    margin-bottom: 20px;
-  }
-  #content .inner .wrap article:nth-of-type(2) .pic .text p {
-    font: 16px/1.3 "arial";
-    color: #555;
-    text-align: start;
-    margin-bottom: 30px;
-  }
-  #content .inner .wrap article:nth-of-type(2) .pic .text a {
-    width: 150px;
-    height: 40px;
-    display: block;
-    letter-spacing: 2px;
-    font: 12px/40px "Montserrat";
-    color: #fff;
-    text-align: center;
-    background: #000;
-  }
-  #content .inner .wrap article:nth-of-type(2) .pic .text a:hover {
-    background: #424242;
-  }
-  #content #prevBoard {
-    width: 100%;
-    padding: 0px 30px;
-  }
-  #content #prevBoard .inner {
-    width: 1180px;
-    margin: 0 auto;
-  }
-  #content #prevBoard .inner .wrap {
-    width: 100%;
-  }
-  #content #prevBoard .inner .wrap .txt1 {
-    width: 100%;
-    margin-right: 40px;
-  }
-  #content #prevBoard .inner .wrap .txt1 h1 {
-    font: bold 40px/1.5 "Noto Sans";
-    color: #000;
-    letter-spacing: 6px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  #content #prevBoard .inner .wrap .txt1 p {
-    font: 20px/1.5 "Noto Sans";
-    color: #000;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  #content #prevBoard .inner .wrap .txt1 p::after {
-    content: "|";
-    display: block;
-    font-size: 40px;
-  }
-  #content #board {
-    width: 100%;
-    padding: 30px 100px 0;
-  }
-  #content #board .inner {
-    width: 1180px;
-    margin: 0px auto;
-    position: relative;
-    background: #fff;
-  }
-  #content #board .inner .wrap {
-    width: 100%;
-    margin-bottom: 10px;
-    /* 첫번째 article------------------------- */
-    /* 두번째 article------------------- */
-    /* 세번째 article------------------------------------ */
-    /* 네번째 article--------------------------------- */
-    /* 다섯번째 article------------------------------------ */
-    /* 여섯번째 article------------------- */
-    /* 일곱번째 article-------------------- */
-    /* 여덟번째 article--------------------------------- */
-  }
-  #content #board .inner .wrap::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-  #content #board .inner .wrap article:nth-of-type(1) {
-    width: 590px;
-    height: 580px;
-    float: left;
-    position: relative;
-  }
-  #content #board .inner .wrap article:nth-of-type(1) img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.3s;
-    transform: scale(1);
-  }
-  #content #board .inner .wrap article:nth-of-type(1):hover img {
-    filter: brightness(80%);
-  }
-  #content #board .inner .wrap article:nth-of-type(2) {
-    width: 295px;
-    height: 290px;
-    float: left;
-    padding: 30px;
-  }
-  #content #board .inner .wrap article:nth-of-type(2) h1 {
-    font: bold 20px/1 "Noto Sans";
-    color: #252422;
-    margin-bottom: 20px;
-  }
-  #content #board .inner .wrap article:nth-of-type(2) p {
-    font: 13px/1.3 "arial";
-    color: #555;
-    margin-bottom: 20px;
-  }
-  #content #board .inner .wrap article:nth-of-type(2) a {
-    display: block;
-    width: 100px;
-    height: 30px;
-    letter-spacing: 2px;
-    font: 10px/30px "Montserrat";
-    color: #fff;
-    background: #000;
-    border: 1px solid #000;
-    text-align: center;
-  }
-  #content #board .inner .wrap article:nth-of-type(2):hover {
-    background: #eee;
-  }
-  #content #board .inner .wrap article:nth-of-type(3) {
-    width: 295px;
-    height: 290px;
-    float: left;
-    text-align: center;
-    margin-right: 0;
-  }
-  #content #board .inner .wrap article:nth-of-type(3) img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.3s;
-  }
-  #content #board .inner .wrap article:nth-of-type(3):hover img {
-    filter: brightness(80%);
-  }
-  #content #board .inner .wrap article:nth-of-type(4) {
-    width: 295px;
-    height: 290px;
-    float: left;
-  }
-  #content #board .inner .wrap article:nth-of-type(4) img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.3s;
-  }
-  #content #board .inner .wrap article:nth-of-type(4):hover img {
-    filter: brightness(80%);
-  }
-  #content #board .inner .wrap article:nth-of-type(5) {
-    width: 295px;
-    height: 290px;
-    float: left;
-    padding: 30px;
-  }
-  #content #board .inner .wrap article:nth-of-type(5) h1 {
-    font: bold 20px/1 "Noto Sans";
-    color: #252422;
-    margin-bottom: 20px;
-  }
-  #content #board .inner .wrap article:nth-of-type(5) p {
-    font: 13px/1.3 "arial";
-    color: #555;
-    margin-bottom: 20px;
-  }
-  #content #board .inner .wrap article:nth-of-type(5) a {
-    display: block;
-    width: 100px;
-    height: 30px;
-    letter-spacing: 2px;
-    font: 10px/30px "Montserrat";
-    color: #fff;
-    background: #000;
-    border: 1px solid #000;
-    text-align: center;
-  }
-  #content #board .inner .wrap article:nth-of-type(5):hover {
-    background: #eee;
-  }
-  #content #board .inner .wrap article:nth-of-type(6) {
-    width: 295px;
-    height: 290px;
-    float: left;
-  }
-  #content #board .inner .wrap article:nth-of-type(6) img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.3s;
-  }
-  #content #board .inner .wrap article:nth-of-type(6):hover img {
-    filter: brightness(80%);
-  }
-  #content #board .inner .wrap article:nth-of-type(7) {
-    width: 295px;
-    height: 290px;
-    float: left;
-    padding: 30px;
-  }
-  #content #board .inner .wrap article:nth-of-type(7) h1 {
-    font: bold 20px/1 "Noto Sans";
-    color: #252422;
-    margin-bottom: 20px;
-  }
-  #content #board .inner .wrap article:nth-of-type(7) p {
-    font: 13px/1.3 "arial";
-    color: #555;
-    margin-bottom: 20px;
-  }
-  #content #board .inner .wrap article:nth-of-type(7) a {
-    display: block;
-    width: 100px;
-    height: 30px;
-    letter-spacing: 2px;
-    font: 10px/30px "Montserrat";
-    color: #fff;
-    background: #000;
-    border: 1px solid #000;
-    text-align: center;
-  }
-  #content #board .inner .wrap article:nth-of-type(7):hover {
-    background: #eee;
-  }
-  #content #board .inner .wrap article:nth-of-type(8) {
-    width: 590px;
-    height: 290px;
-    float: left;
-    margin-right: 0;
-  }
-  #content #board .inner .wrap article:nth-of-type(8) img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.3s;
-  }
-  #content #board .inner .wrap article:nth-of-type(8):hover img {
-    filter: brightness(80%);
-  }
-  #content #nextBoard {
-    width: 100%;
-    padding: 100px 30px;
-  }
-  #content #nextBoard .inner {
-    width: 1180px;
-    margin: 0 auto;
-  }
-  #content #nextBoard .inner .wrap {
-    width: 1180px;
-  }
-  #content #nextBoard .inner .wrap article {
-    position: relative;
-    float: left;
-    width: 380px;
-  }
-  #content #nextBoard .inner .wrap article i {
-    display: block;
-    font-size: 30px;
-    line-height: 80px;
-    text-align: center;
-    background: #fff;
-    color: #000;
-    border-radius: 45px;
-    border: 1px solid rgba(173, 173, 173, 0.5);
-    width: 90px;
-    height: 90px;
-  }
-  #content #nextBoard .inner .wrap article i:hover {
-    background: #000;
-    color: #fff;
-  }
-  #content #nextBoard .inner .wrap article h1 {
-    font: bold 25px/1.3 "Noto Sans";
-    color: #000;
-    position: absolute;
-    top: 0px;
-    left: 100px;
-    padding-left: 10px;
-  }
-  #content #nextBoard .inner .wrap article p {
-    font: 15px/1.3 "Noto Sans";
-    color: #222;
-    position: absolute;
-    bottom: 0px;
-    left: 100px;
-    padding-left: 10px;
-  }
-  #content #nextBoard .inner .wrap:nth-of-type(3) {
-    margin-right: 0;
-  }
-  #content #footer {
-    width: 100%;
-    padding-top: 20px;
-    background: #000;
-  }
-  #content #footer .inner {
-    width: 1180px;
-    margin: 0 auto;
-  }
-  #content #footer .inner .wrap h1 {
-    font: bold 23px/1 "Noto Sans";
-    border-bottom: 1px solid rgba(255, 255, 255, 0.322);
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #fff;
-    letter-spacing: 2px;
-  }
-  #content #footer .inner .wrap article {
-    float: left;
-  }
-  #content #footer .inner .wrap article:nth-of-type(1) {
-    width: 33%;
-  }
-  #content #footer .inner .wrap article:nth-of-type(1) h2 {
-    font: 18px/1 "Noto Sans";
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding-bottom: 20px;
-  }
-  #content #footer .inner .wrap article:nth-of-type(1) address {
-    font: 16px/1.5 "Noto Sans";
-    color: #fff;
-  }
-  #content #footer .inner .wrap article:nth-of-type(2) {
-    width: 33%;
-  }
-  #content #footer .inner .wrap article:nth-of-type(2) ul {
-    width: 100%;
-    padding-left: 200px;
-    margin-bottom: 20px;
-  }
-  #content #footer .inner .wrap article:nth-of-type(2) ul li {
-    font: 18px/1.5 "Noto Sans";
-    color: #fff;
-  }
-  #content #footer .inner .wrap article:nth-of-type(3) {
-    width: 33%;
-  }
-  #content #footer .inner .wrap article:nth-of-type(3) ul {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-  }
-  #content #footer .inner .wrap article:nth-of-type(3) ul li {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    border-radius: 25px;
-    background: #fff;
-  }
-  #content #footer .inner .wrap article:nth-of-type(3) ul li a {
-    display: block;
-    font: 30px/50px "Noto Sans";
-    color: #000;
-    text-align: center;
-  }
-  #content #footer p {
-    width: 100%;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.534);
-    font: 13px/1.6 "arial";
-    color: rgba(0, 0, 0, 0.479);
-  }
-
-  /* prevBoard -------------------------------------------*/
-  #prevBoard {
-    width: 100%;
-    padding: 0px 30px;
-  }
-  #prevBoard .inner {
-    width: 1180px;
-    margin: 0 auto;
-  }
-  #prevBoard .inner .wrap {
-    width: 100%;
-  }
-  #prevBoard .inner .wrap .txt1 {
-    width: 100%;
-    margin-right: 40px;
-  }
-  #prevBoard .inner .wrap .txt1 h1 {
-    font: bold 40px/1.5 "Noto Sans";
-    color: #000;
-    letter-spacing: 6px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  #prevBoard .inner .wrap .txt1 p {
-    font: 2vh/1.5 "Noto Sans";
-    color: #000;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  #prevBoard .inner .wrap .txt1 p::after {
-    content: "|";
-    display: block;
-    font-size: 40px;
-  }
-
-  /* board--------------------------------------------- */
-  #board {
-    width: 100%;
-    padding: 30px 100px 0;
-  }
-  #board .inner {
-    width: 1180px;
-    margin: 0px auto;
-    position: relative;
-    background: #fff;
-  }
-  #board .inner .wrap {
-    width: 100%;
-    margin-bottom: 10px;
-    /* 첫번째 article------------------------- */
-    /* 두번째 article------------------- */
-    /* 세번째 article------------------------------------ */
-    /* 네번째 article--------------------------------- */
-    /* 다섯번째 article------------------------------------ */
-    /* 여섯번째 article------------------- */
-    /* 일곱번째 article-------------------- */
-    /* 여덟번째 article--------------------------------- */
-  }
-  #board .inner .wrap::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-  #board .inner .wrap article:nth-of-type(1) {
-    width: 590px;
-    height: 580px;
-    float: left;
-    position: relative;
-  }
-  #board .inner .wrap article:nth-of-type(1) img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.3s;
-    transform: scale(1);
-  }
-  #board .inner .wrap article:nth-of-type(1):hover img {
-    filter: brightness(80%);
-  }
-  #board .inner .wrap article:nth-of-type(2) {
-    width: 295px;
-    height: 290px;
-    float: left;
-    padding: 30px;
-  }
-  #board .inner .wrap article:nth-of-type(2) h1 {
-    font: bold 20px/1 "Noto Sans";
-    color: #252422;
-    margin-bottom: 20px;
-  }
-  #board .inner .wrap article:nth-of-type(2) p {
-    font: 13px/1.3 "arial";
-    color: #555;
-    margin-bottom: 20px;
-  }
-  #board .inner .wrap article:nth-of-type(2) a {
-    display: block;
-    width: 100px;
-    height: 30px;
-    letter-spacing: 2px;
-    font: 10px/30px "Montserrat";
-    color: #fff;
-    background: #000;
-    border: 1px solid #000;
-    text-align: center;
-  }
-  #board .inner .wrap article:nth-of-type(2):hover {
-    background: #eee;
-  }
-  #board .inner .wrap article:nth-of-type(3) {
-    width: 295px;
-    height: 290px;
-    float: left;
-    text-align: center;
-    margin-right: 0;
-  }
-  #board .inner .wrap article:nth-of-type(3) img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.3s;
-  }
-  #board .inner .wrap article:nth-of-type(3):hover img {
-    filter: brightness(80%);
-  }
-  #board .inner .wrap article:nth-of-type(4) {
-    width: 295px;
-    height: 290px;
-    float: left;
-  }
-  #board .inner .wrap article:nth-of-type(4) img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.3s;
-  }
-  #board .inner .wrap article:nth-of-type(4):hover img {
-    filter: brightness(80%);
-  }
-  #board .inner .wrap article:nth-of-type(5) {
-    width: 295px;
-    height: 290px;
-    float: left;
-    padding: 30px;
-  }
-  #board .inner .wrap article:nth-of-type(5) h1 {
-    font: bold 20px/1 "Noto Sans";
-    color: #252422;
-    margin-bottom: 20px;
-  }
-  #board .inner .wrap article:nth-of-type(5) p {
-    font: 13px/1.3 "arial";
-    color: #555;
-    margin-bottom: 20px;
-  }
-  #board .inner .wrap article:nth-of-type(5) a {
-    display: block;
-    width: 100px;
-    height: 30px;
-    letter-spacing: 2px;
-    font: 10px/30px "Montserrat";
-    color: #fff;
-    background: #000;
-    border: 1px solid #000;
-    text-align: center;
-  }
-  #board .inner .wrap article:nth-of-type(5):hover {
-    background: #eee;
-  }
-  #board .inner .wrap article:nth-of-type(6) {
-    width: 295px;
-    height: 290px;
-    float: left;
-  }
-  #board .inner .wrap article:nth-of-type(6) img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.3s;
-  }
-  #board .inner .wrap article:nth-of-type(6):hover img {
-    filter: brightness(80%);
-  }
-  #board .inner .wrap article:nth-of-type(7) {
-    width: 295px;
-    height: 290px;
-    float: left;
-    padding: 30px;
-  }
-  #board .inner .wrap article:nth-of-type(7) h1 {
-    font: bold 20px/1 "Noto Sans";
-    color: #252422;
-    margin-bottom: 20px;
-  }
-  #board .inner .wrap article:nth-of-type(7) p {
-    font: 13px/1.3 "arial";
-    color: #555;
-    margin-bottom: 20px;
-  }
-  #board .inner .wrap article:nth-of-type(7) a {
-    display: block;
-    width: 100px;
-    height: 30px;
-    letter-spacing: 2px;
-    font: 10px/30px "Montserrat";
-    color: #fff;
-    background: #000;
-    border: 1px solid #000;
-    text-align: center;
-  }
-  #board .inner .wrap article:nth-of-type(7):hover {
-    background: #eee;
-  }
-  #board .inner .wrap article:nth-of-type(8) {
-    width: 590px;
-    height: 290px;
-    float: left;
-    margin-right: 0;
-  }
-  #board .inner .wrap article:nth-of-type(8) img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.3s;
-  }
-  #board .inner .wrap article:nth-of-type(8):hover img {
-    filter: brightness(80%);
-  }
-
-  /* nextBoard -------------------------------------------*/
-  #nextBoard {
-    width: 100%;
-    padding: 100px 30px;
-  }
-  #nextBoard .inner {
-    width: 1180px;
-    margin: 0 auto;
-  }
-  #nextBoard .inner .wrap {
-    width: 1180px;
-  }
-  #nextBoard .inner .wrap article {
-    position: relative;
-    float: left;
-    width: 380px;
-  }
-  #nextBoard .inner .wrap article i {
-    display: block;
-    font-size: 30px;
-    line-height: 80px;
-    text-align: center;
-    background: #fff;
-    color: #000;
-    border-radius: 45px;
-    border: 1px solid rgba(173, 173, 173, 0.5);
-    width: 90px;
-    height: 90px;
-  }
-  #nextBoard .inner .wrap article i:hover {
-    background: #000;
-    color: #fff;
-  }
-  #nextBoard .inner .wrap article h1 {
-    font: bold 25px/1.3 "Noto Sans";
-    color: #000;
-    position: absolute;
-    top: 0px;
-    left: 100px;
-    padding-left: 10px;
-  }
-  #nextBoard .inner .wrap article p {
-    font: 15px/1.3 "Noto Sans";
-    color: #222;
-    position: absolute;
-    bottom: 0px;
-    left: 100px;
-    padding-left: 10px;
-  }
-  #nextBoard .inner .wrap:nth-of-type(3) {
-    margin-right: 0;
-  }
-
-  /* footer ---------------------------------------------*/
-  #footer {
-    width: 100%;
-    padding-top: 20px;
-    background: #000;
-  }
-  #footer .inner {
-    width: 1180px;
-    margin: 0 auto;
-  }
-  #footer .inner .wrap h1 {
-    font: bold 23px/1 "Noto Sans";
-    border-bottom: 1px solid rgba(255, 255, 255, 0.322);
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #fff;
-    letter-spacing: 2px;
-  }
-  #footer .inner .wrap article {
-    float: left;
-  }
-  #footer .inner .wrap article:nth-of-type(1) {
-    width: 33%;
-  }
-  #footer .inner .wrap article:nth-of-type(1) h2 {
-    font: 18px/1 "Noto Sans";
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding-bottom: 20px;
-  }
-  #footer .inner .wrap article:nth-of-type(1) address {
-    font: 16px/1.5 "Noto Sans";
-    color: #fff;
-  }
-  #footer .inner .wrap article:nth-of-type(2) {
-    width: 33%;
-  }
-  #footer .inner .wrap article:nth-of-type(2) ul {
-    width: 100%;
-    padding-left: 200px;
-    margin-bottom: 20px;
-  }
-  #footer .inner .wrap article:nth-of-type(2) ul li {
-    font: 18px/1.5 "Noto Sans";
-    color: #fff;
-  }
-  #footer .inner .wrap article:nth-of-type(3) {
-    width: 33%;
-  }
-  #footer .inner .wrap article:nth-of-type(3) ul {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-  }
-  #footer .inner .wrap article:nth-of-type(3) ul li {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    border-radius: 25px;
-    background: #fff;
-  }
-  #footer .inner .wrap article:nth-of-type(3) ul li a {
-    display: block;
-    font: 30px/50px "Noto Sans";
-    color: #000;
-    text-align: center;
-  }
-  #footer p {
-    width: 100%;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.534);
-    font: 13px/1.6 "arial";
-    color: rgba(0, 0, 0, 0.479);
-  }
+/* popup ----------------------------------------*/
+#popup {
+  width: 400px;
+  padding: 40px;
+  background: #111;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 5px black;
 }
-/* mobile ------------------------------------------- */
-@media screen and (max-width: 539px) {
-  /* visual -------------------------------- */
-  #visual {
-    height: calc(100vh - 101px);
-    background: url(../img/visual1.jpg) no-repeat center/cover;
-  }
-  #visual .inner {
-    padding: 0 30px;
-  }
+#popup .content {
+  width: 100%;
+  min-height: 150px;
+  color: #fff;
+}
+#popup .content h1 {
+  font: 20px/1 "Noto Sans";
+  color: #fff;
+  padding-top: 10px;
+}
+#popup .content i {
+  display: block;
+  text-align: center;
+  font-size: 60px;
+  padding: 20px 0 10px;
+}
+#popup .content .send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#popup .content .send input[type=text] {
+  width: 220px;
+  height: 30px;
+  padding-left: 10px;
+}
+#popup .content .send a {
+  padding: 5px;
+  margin-left: 10px;
+  background: #fff;
+  border-radius: 3px;
+  color: #000;
+  text-align: center;
+}
+#popup .content .send a i {
+  padding: 0 10px;
+  font-size: 20px;
+}
+#popup .wrap {
+  display: block;
+  padding-top: 10px;
+}
+#popup .wrap input {
+  margin-right: 10px;
+}
+#popup .wrap label {
+  font: 14px/1 "Noto Sans";
+  color: #fff;
+}
+#popup .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#popup .close i {
+  font-size: 25px;
+  color: #fff;
+}
+#popup .close:hover i {
+  font-weight: bold;
+}
+
+/* scrollB ----------------------------------------*/
+#scrollB {
+  position: fixed;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#scrollB li {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(17, 17, 17, 0.541);
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+#scrollB li.on {
+  height: 100px;
+  background: #111;
 }
 
 /*# sourceMappingURL=style.css.map */
