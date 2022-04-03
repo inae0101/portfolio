@@ -1,7 +1,7 @@
 const body = document.querySelector("body"); 
-const main = document.querySelector("main"); 
+const main = document.querySelector(".mainY"); 
 const key = "AIzaSyB7nrhbjSC7YDpKTx1N4KobEeTguhGOYHA";
-const playListId = "PLyQWRfaKIpVbTpqHSDsvBwmhicB3LsgUy"; 
+const playListId = "PLyQWRfaKIpVZb3lCBeAwY_2-lP9fzWM-4"; 
 const num = 4; 
 const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playListId}&maxResults=${num}`; 
 
@@ -29,13 +29,15 @@ fetch(url)
 
         result +=`
                 <article>
+                    <div class="date">
+                        <span>${date}</span>
+                    </div>
                     <a class="pic" href="#" data-vid="${item.snippet.resourceId.videoId}">
                         <img src="${item.snippet.thumbnails.standard.url}">
                     </a>
                     <div class="con">
                         <h2 data-vid="${item.snippet.resourceId.videoId}">${tit}</h2>
                         <p>${desc}</p>
-                        <span>${date}</span>
                     </div>                    
                 </article>
         `;
