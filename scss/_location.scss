@@ -93,6 +93,9 @@
 			            letter-spacing: 1px; 
                         padding-bottom: 10px;
                     }
+                    &:hover {
+                        box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.454);
+                    }
                 }
             }
                 
@@ -116,6 +119,9 @@
                     font: 20px/40px $mainFont;
                     color: #fff;
                     text-align: center;
+                }
+                &:hover {
+                    background: rgb(255, 140, 0);
                 }
             }
         }

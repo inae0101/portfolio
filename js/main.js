@@ -11,7 +11,7 @@ btnCall.onclick = function(e){
 
 
 const popup = document.querySelector("#popup"); 
-const btnClose = popup.querySelector(".close"); 
+const btnClose = document.querySelector(".close"); 
 const isCookie = document.cookie.indexOf("today=done"); 
 let isOn; 
 
