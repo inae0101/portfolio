@@ -1147,7 +1147,7 @@ $mobile: 539px;
 			color:#000;
 			  
 		}
-	}
+	
 	.close{
 		position:absolute; top:15px; right:15px; 
 		i{
@@ -1156,6 +1156,7 @@ $mobile: 539px;
 		&:hover i{
 			font-weight: bold;
 		}
+	}
 	}
 }
 

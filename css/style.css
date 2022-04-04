@@ -974,7 +974,7 @@ main {
   width: 1180px;
   overflow: hidden;
   position: relative;
-  opacity: 0;
+  opacity: 1;
   transform: translateY(100px);
   transition: 1s;
   margin: 0 auto;
@@ -2242,16 +2242,16 @@ main .item > div .profile span {
   font: 14px/1 "Noto Sans";
   color: #000;
 }
-#popup .close {
+#popup .wrap .close {
   position: absolute;
   top: 15px;
   right: 15px;
 }
-#popup .close i {
+#popup .wrap .close i {
   font-size: 25px;
   color: #000;
 }
-#popup .close:hover i {
+#popup .wrap .close:hover i {
   font-weight: bold;
 }
 
