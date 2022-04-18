@@ -1,25 +1,26 @@
 @charset "UTF-8";
 
-.contentAbout{
-	width:100%; 
-  	padding:0 0 50px;
-    .sub_visual{
-        width:100%; 
-        height:12vw; 
-        background: url(../img/image_4.jpg) no-repeat center/cover fixed; 
-		margin-bottom:80px;
-
-    }
-	.inner{
-		width:1180px; 
-		margin:0 auto;  
-		h1{
-		font: normal 60px/1.5 'Secular One';
-		border-bottom: 3px solid #999;
-		color:#000; 
-		text-align: left;
+.contentAbout {
+	width: 100%;
+	padding: 0 0 50px;
+	.sub_visual {
+		width: 100%;
+		height: 200px;
+		background: url(../img/033.jpg) no-repeat center/cover fixed;
+		clip-path: polygon(0% 0%, 20% 0, 27% 50%, 20% 100%, 0% 100%);
+		margin-bottom: 80px;
+	}
+	.inner {
+		width: 1180px;
+		margin: 0 auto;
+		h1 {
+			font: normal 50px/1.5 'Secular One';
+			border-top: 2px solid #9d9083;
+			border-bottom: 2px solid #9d9083;
+			color: #222222;
+			text-align: center;
 		}
-    }
+	}
 }
 
 #member {
@@ -30,263 +31,272 @@
 		width: 1180px;
 		margin: 30px auto;
 		position: relative;
-		
-		
-		.wrap{
+
+		.wrap {
 			width: 100%;
 			position: relative;
-			article:nth-of-type(1){
+			article {
+				padding-bottom: 100px;
+			}
+			article:nth-of-type(1) {
 				width: 500px;
 				height: 524px;
 				float: left;
-				padding-left:100px;
+				padding-left: 100px;
 				h1 {
-					font: bold 70px/1 'Libre Baskerville';
-					color: #000;
+					font: bold 70px/1 $mainFont;
+					color: #222;
 					margin-bottom: 10px;
-					text-align:left;
+					text-align: left;
 				}
 				h2 {
-					font: 30px/1 'Libre Baskerville';
-					color: #000;
+					font: 30px/1 $mainFont;
+					color: #222222b3;
 					margin-bottom: 30px;
-					text-align:end;
+					text-align: end;
 				}
-				p{
+				p {
 					font: 15px/1.3 'arial';
-					color: #333;
-					margin: 20px;
+					color: #aeaeae;
+					margin-bottom: 20px;
 				}
 			}
-			article:nth-of-type(2){
+			article:nth-of-type(2) {
 				width: 500px;
 				float: left;
-				padding-left:100px;
-				img{
+				padding-left: 100px;
+				padding-bottom: 100px;
+				img {
 					width: 100%;
 					height: 520px;
 					object-fit: cover;
 				}
 			}
-			article:nth-of-type(3){
+			article:nth-of-type(3) {
 				width: 400px;
 				float: left;
-				padding-left:100px;
-				.pic{
-					padding-top: 100px;
-					img{
+				padding-left: 100px;
+				.pic {
+					img {
 						width: 100%;
-						height: 400px;
+						height: 320px;
 						object-fit: cover;
 					}
 				}
 			}
-			article:nth-of-type(4){
+			article:nth-of-type(4) {
 				width: 500px;
-				height: 524px;
 				float: left;
-				padding-left:100px;
-				padding-top:150px;
-				margin-bottom: 100px;
+				padding-left: 100px;
 				h1 {
-					font: bold 50px/1 'Libre Baskerville';
-					color: #000;
-					margin-bottom: 10px;
-					text-align:left;
+					font: bold 50px/1 $mainFont;
+					color: #222;
+					margin: 50px 0 10px;
+					text-align: left;
 					position: relative;
 					left: -150px;
-					
 				}
 				h2 {
-					font: 30px/1 'Libre Baskerville';
-					color: #000;
+					font: 30px/1 $mainFont;
+					color: #222222b3;
 					margin-bottom: 30px;
-					text-align:end;
+					text-align: end;
 				}
-				p{
+				p {
 					font: 15px/1.3 'arial';
-					color: #333;
-					margin: 20px;
+					color: #aeaeae;
+					margin-bottom: 20px;
 				}
 			}
-			article:nth-of-type(5){
+			article:nth-of-type(5) {
 				width: 400px;
 				float: left;
-				padding-left:100px;
-				.pic{
-					padding-top: 100px;
-					img{
+				padding-left: 100px;
+				.pic {
+					img {
 						width: 100%;
-						height: 400px;
+						height: 320px;
 						object-fit: cover;
 					}
 				}
 			}
-			article:nth-of-type(6){
+			article:nth-of-type(6) {
 				width: 500px;
-				height: 524px;
 				float: left;
-				padding-left:100px;
-				padding-top:150px;
-				margin-bottom: 100px;
+				padding-left: 100px;
+
 				h1 {
-					font: bold 50px/1 'Libre Baskerville';
-					color: #000;
-					margin-bottom: 10px;
-					text-align:left;
+					font: bold 50px/1 $mainFont;
+					color: #222;
+					margin: 50px 0 10px;
+					text-align: left;
 					position: relative;
 					left: -150px;
-					
 				}
 				h2 {
-					font: 30px/1 'Libre Baskerville';
-					color: #000;
+					font: 30px/1 $mainFont;
+					color: #222222b3;
 					margin-bottom: 30px;
-					text-align:end;
+					text-align: end;
 				}
-				p{
+				p {
 					font: 15px/1.3 'arial';
-					color: #333;
-					margin: 20px;
+					color: #aeaeae;
+					margin-bottom: 20px;
 				}
 			}
-			article:nth-of-type(7){
+			article:nth-of-type(7) {
 				width: 400px;
 				float: left;
-				padding-left:100px;
-				.pic{
-					padding-top: 100px;
-					img{
+				padding-left: 100px;
+				.pic {
+					img {
 						width: 100%;
-						height: 400px;
+						height: 320px;
 						object-fit: cover;
 					}
 				}
 			}
-			article:nth-of-type(8){
+			article:nth-of-type(8) {
 				width: 500px;
-				height: 524px;
 				float: left;
-				padding-left:100px;
-				padding-top:150px;
-				margin-bottom: 100px;
+				padding-left: 100px;
+
 				h1 {
-					font: bold 50px/1 'Libre Baskerville';
-					color: #000;
-					margin-bottom: 10px;
-					text-align:left;
+					font: bold 50px/1 $mainFont;
+					color: #222;
+					margin: 50px 0 10px;
+					text-align: left;
 					position: relative;
 					left: -150px;
-					
 				}
 				h2 {
-					font: 30px/1 'Libre Baskerville';
-					color: #000;
+					font: 30px/1 $mainFont;
+					color: #222222b3;
 					margin-bottom: 30px;
-					text-align:end;
+					text-align: end;
 				}
-				p{
+				p {
 					font: 15px/1.3 'arial';
-					color: #333;
-					margin: 20px;
+					color: #aeaeae;
+					margin-bottom: 20px;
 				}
 			}
-			article:nth-of-type(9){
+			article:nth-of-type(9) {
 				width: 400px;
 				float: left;
-				padding-left:100px;
-				.pic{
-					padding-top: 100px;
-					img{
+				padding-left: 100px;
+				.pic {
+					img {
 						width: 100%;
-						height: 400px;
+						height: 320px;
 						object-fit: cover;
 					}
 				}
 			}
-			article:nth-of-type(10){
+			article:nth-of-type(10) {
 				width: 500px;
-				height: 524px;
 				float: left;
-				padding-left:100px;
-				padding-top:150px;
-				margin-bottom: 100px;
+				padding-left: 100px;
+
 				h1 {
-					font: bold 50px/1 'Libre Baskerville';
-					color: #000;
-					margin-bottom: 10px;
-					text-align:left;
+					font: bold 50px/1 $mainFont;
+					color: #222;
+					margin: 50px 0 10px;
+					text-align: left;
 					position: relative;
 					left: -150px;
-					
 				}
 				h2 {
-					font: 30px/1 'Libre Baskerville';
-					color: #000;
+					font: 30px/1 $mainFont;
+					color: #222222b3;
 					margin-bottom: 30px;
-					text-align:end;
+					text-align: end;
 				}
-				p{
+				p {
 					font: 15px/1.3 'arial';
-					color: #333;
-					margin: 20px;
+					color: #aeaeae;
+					margin-bottom: 20px;
 				}
 			}
-			article:nth-of-type(11){
+			article:nth-of-type(11) {
 				width: 400px;
 				float: left;
-				padding-left:100px;
-				.pic{
-					padding-top: 100px;
-					img{
+				padding-left: 100px;
+				.pic {
+					img {
 						width: 100%;
-						height: 400px;
+						height: 320px;
 						object-fit: cover;
 					}
 				}
 			}
-			article:nth-of-type(12){
+			article:nth-of-type(12) {
 				width: 500px;
-				height: 524px;
 				float: left;
-				padding-left:100px;
-				padding-top:150px;
-				margin-bottom: 100px;
+				padding-left: 100px;
+
 				h1 {
-					font: bold 50px/1 'Libre Baskerville';
-					color: #000;
-					margin-bottom: 10px;
-					text-align:left;
+					font: bold 50px/1 $mainFont;
+					color: #222;
+					margin: 50px 0 10px;
+					text-align: left;
 					position: relative;
 					left: -150px;
-					
 				}
 				h2 {
-					font: 30px/1 'Libre Baskerville';
-					color: #000;
+					font: 30px/1 $mainFont;
+					color: #222222b3;
 					margin-bottom: 40px;
-					text-align:end;
+					text-align: end;
 				}
-				p{
+				p {
 					font: 15px/1.3 'arial';
-					color: #333;
-					margin: 20px;
+					color: #aeaeae;
+					margin-bottom: 20px;
 				}
 			}
-			
-		}	
+			article:nth-of-type(13) {
+				width: 500px;
+				height: 524px;
+				float: left;
+				padding-left: 100px;
+				h1 {
+					font: bold 70px/1 $mainFont;
+					color: #222;
+					margin: 50px 0 10px;
+					text-align: left;
+				}
+				h2 {
+					font: 30px/1 $mainFont;
+					color: #222222b3;
+					margin-bottom: 30px;
+					text-align: end;
+				}
+				p {
+					font: 15px/1.3 'arial';
+					color: #aeaeae;
+					margin-bottom: 20px;
+				}
+			}
+			article:nth-of-type(14) {
+				width: 500px;
+				float: left;
+				padding-left: 100px;
+				img {
+					width: 100%;
+					height: 520px;
+					object-fit: cover;
+				}
+			}
+		}
 	}
 }
 
-
-
-
 /* tablet ----------------------------------------------------------*/
-@media screen and (max-width:$tablet){
-  
+@media screen and (max-width: $tablet) {
 }
 
 /*mobile ----------------------------------------------------------*/
-@media screen and (max-width:$mobile){
-  
+@media screen and (max-width: $mobile) {
 }

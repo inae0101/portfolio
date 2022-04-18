@@ -1,110 +1,113 @@
-body{ background:#fff; }
+body {
+	background: #fff;
+}
 
-.contentGallery{
-    width:100%; 
-    padding:0 0 50px; 
-  
-      .sub_visual{
-          width:100%; 
-          height:12vw; 
-          background: url(../img/sub_banner_3.jpg) no-repeat center/cover fixed;
-          margin-bottom:80px;
-          position: relative;
-         
-          /*#gnb{    
+.contentGallery {
+	width: 100%;
+	padding: 0 0 50px;
+
+	.sub_visual {
+		width: 100%;
+		height: 200px;
+		background: url(../img/033.jpg) no-repeat center/cover fixed;
+		clip-path: polygon(0% 0%, 60% 0, 67% 50%, 60% 100%, 0% 100%);
+		margin-bottom: 80px;
+		position: relative;
+
+		/*#gnb{    
           }*/
-      }
-      .inner{
-        width:1180px; 
-        margin:0 auto;  
-        h1{
-        font: normal 60px/1.5 'Secular One';
-        border-bottom: 3px solid #999;
-        color:#000; 
-        text-align: left;
-        }
-         
-      }
+	}
+	.inner {
+		width: 1180px;
+		margin: 0 auto;
+		h1 {
+			font: normal 50px/1.5 'Secular One';
+			border-top: 2px solid #9d9083;
+			border-bottom: 2px solid #9d9083;
+			color: #222222;
+			text-align: center;
+		}
+	}
 }
 
-.gallery{
-    width: 100%;
+.gallery {
+	padding: 50px 0;
+	width: 100%;
 
-.inner{ 
-    width: 1180px;
-    margin: 0 auto; 
+	.inner {
+		width: 1180px;
+		margin: 0 auto;
 
-    &::after{
-        content:''; display:block; clear:both; 
-    }
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
 
-    .wrap{
-        width:100%; 
-        float:left;
-        padding: 50px 0 100px;
- 
-        article{
-            float:left; 
-            width:25%; 
-            padding:12px;
-            margin-bottom: 20px;
-             
+		.wrap {
+			width: 100%;
+			float: left;
+			padding: 50px 0 100px;
+			min-height: 800px;
 
-            div{
-                width:100%; 
-                background:#fff;
-              
-                border-radius:4px; 
-                box-shadow:3px 3px 10px rgba(0,0,0,0.1); 
-                padding:14px; 
-                
-               
+			article {
+				float: left;
+				width: 25%;
+				padding: 12px;
+				margin-bottom: 20px;
 
-                img{
-                    width:100%;
-                }
-                h2{
-                    font:bold 14px/1 $mainFont; 
-                    color:#444; 
-                    letter-spacing:1px; 
-                    margin-top:15px; 
-                    margin-bottom:5px; 
-                }
-                p{
-                    font:12px/1.2 $mainFont;
-                    color:#777; 
-                    margin-bottom:15px; 
-                }
-            }
-        }
-    }
+				div {
+					width: 100%;
+					background: #fff;
 
-    ul{
-        float:right; 
+					// border-radius: 4px;
+					box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+					padding: 14px;
 
-        li{
-            float:left; 
-            width:100px; height:26px; 
-            margin-right:20px; 
+					img {
+						width: 100%;
+					}
+					h2 {
+						font: bold 14px/1 $mainFont;
+						color: #444;
+						letter-spacing: 1px;
+						margin-top: 15px;
+						margin-bottom: 5px;
+					}
+					p {
+						font: 12px/1.2 $mainFont;
+						color: #777;
+						margin-bottom: 15px;
+					}
+				}
+			}
+		}
 
-            a{
-                display:block; 
-                width:100%; height:100%; 
-                font:bold 14px/26px $mainFont;
-                color:#444; 
-                letter-spacing:1px; 
-                text-align:center; 
-                background:#fff; 
-            }
+		ul {
+			float: right;
 
-            &.on a{
-                background:orange; 
-                color:#fff; 
+			li {
+				float: left;
+				width: 100px;
+				height: 30px;
+				margin-right: 10px;
 
-            }
-        }
-    }
+				a {
+					display: block;
+					width: 100%;
+					height: 100%;
+					font: bold 14px/26px $mainFont;
+					color: #444;
+					letter-spacing: 1px;
+					text-align: center;
+					background: #fff;
+				}
+
+				&.on a {
+					background: #9d9083;
+					color: #fff;
+				}
+			}
+		}
+	}
 }
-}
-
-    
